@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.question-container {
+    margin: 60px 0 20px;
+    display: none;
+}
+
+.question-container.active {
+    display: block;
+}
+
+.question-container p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mcq-options label {
+    margin-right: 10px;
+}
+
+.question-container textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.status {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}

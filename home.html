@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Enabled Exam</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <h1>Voice Enabled Exam</h1>
+    
+    <div class="instructions">
+        Speak commands like "next question", "previous question", "start dictation", "stop dictation", "select option A/B/C/D", or "submit exam".
+    </div>
+
+    <div class="question-container active" id="question1" data-type="theory">
+        <p>1. Explain the concept of pointers in C programming. (Theory)</p>
+        <textarea id="answer1"></textarea>
+    </div>
+
+    <div class="question-container" id="question2" data-type="mcq">
+        <p>2. What is the output of the following code? (MCQ)</p>
+        <pre>
+        int a = 5, b = 10;
+        printf("%d", a + b);
+        </pre>
+        <div class="mcq-options">
+            <label><input type="radio" name="q2" value="A"> 10</label>
+            <label><input type="radio" name="q2" value="B"> 15</label>
+            <label><input type="radio" name="q2" value="C"> 5</label>
+            <label><input type="radio" name="q2" value="D"> 20</label>
+        </div>
+    </div>
+
+    <div class="question-container" id="question3" data-type="theory">
+        <p>3. Describe the difference between stack and heap memory. (Theory)</p>
+        <textarea id="answer3"></textarea>
+    </div>
+
+    <div class="question-container" id="question4" data-type="mcq">
+        <p>4. What is a linked list? (MCQ)</p>
+        <div class="mcq-options">
+            <label><input type="radio" name="q4" value="A"> A data structure</label>
+            <label><input type="radio" name="q4" value="B"> A type of array</label>
+            <label><input type="radio" name="q4" value="C"> A type of pointer</label>
+            <label><input type="radio" name="q4" value="D"> A function</label>
+        </div>
+    </div>
+
+    <div class="question-container" id="question5" data-type="theory">
+        <p>5. Write a program to reverse a string in C. (Theory)</p>
+        <textarea id="answer5"></textarea>
+    </div>
+
+    <button class="submit-btn" id="submitButton">Submit Exam</button>
+    <div class="status" id="status">Voice recognition status: Not started</div>
+
+    <script src="home.js"></script>
+</body>
+</html>

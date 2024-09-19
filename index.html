@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Face Recognition Login</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <!-- TensorFlow.js and MobileNet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+    <h1>Student Face Recognition Login</h1>
+
+    <!-- Upload images for registration -->
+    <input type="file" id="imageUpload" multiple accept="image/*">
+    <button onclick="registerStudents()">Register Students</button>
+
+    <!-- Webcam video feed for face recognition -->
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+
+    <!-- Start the login process -->
+    <button onclick="startLogin()">Login</button>
+
+    <!-- Login status message -->
+    <p id="login-status">Awaiting login...</p>
+
+    <!-- Link the JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
